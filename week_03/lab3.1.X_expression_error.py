@@ -1,4 +1,4 @@
-#labs3.1.7_experssion_error.py
+#lab3.1.X_expression_error.py
 #Why does this expression cause an error? and fix it (use''' ''')
 #Author: Faolán Hamilton
 
