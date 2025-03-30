@@ -2,6 +2,9 @@
 
 #Author: Faolán Hamilton
 
+# In part 2, we continue the menu options, but add in a loop to activate these choices - aka, now if the
+# user inputs a, they add new students, v they view students and q they quit.
+
 def menu_choice ():
     print("What would you like to do? ")
     print ("\t a) Add new student")
