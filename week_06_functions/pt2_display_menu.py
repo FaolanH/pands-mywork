@@ -2,8 +2,9 @@
 
 #Author: Faolán Hamilton
 
-# In part 2, we continue the menu options, but add in a loop to activate these choices - aka, now if the
-# user inputs a, they add new students, v they view students and q they quit.
+# In part 2, we continue the menu options, but add in a lo'op to have a better definition appear - aka, now if the
+# user inputs a, 'in adding' appears, v 'in viewing' appears and q they quit.
+# the functions (which will be defined in other files) have also been called
 
 def menu_choice ():
     print("What would you like to do? ")
