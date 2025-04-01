@@ -12,11 +12,22 @@
 
 #an empty list where the students records will be stored
 
-students = []
-
 #defining the function read_modules, but this has not been used in the below only add names.
+
 def read_modules () :
-    return []
+    modules = []
+    module_name = input ("\t Enter the first module name (blank to quit): ").strip() # .strip() is used to remove any unneccesary spaces 
+
+#because we have used .strip(), even is someone puts spaces in the module name this loop will still work
+    while module_name != "":
+        module = {}
+        module ["name"] = module_name
+        module ["grade"] = int(input ("\t\t Enter grade: "))
+        modules.append(module)
+        #read in next module name
+        module_name = input("\t Enter next module name (blank to quit): ").strip()
+     #important to keep in line within function   
+    return modules
 
     #current_student = a dictionary, to store the record title and the actual record, e.g. "name" : Mary
 def do_add (students) :
@@ -27,10 +38,9 @@ def do_add (students) :
     students.append(current_student)
 
 #test
-
+'''
 do_add (students)
 
 do_add (students)
-
+'''
 #REMOVE THIS BEFORE PIECING EVERYTHING TOGETHER
-print (students)

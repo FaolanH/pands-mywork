@@ -4,9 +4,12 @@
 
 #in this file, we are now defining the modules
 
-def read_modules () :
-    modules = []
+# no error handling done - must remember anything within a function cannot be called outside of function
+modules = []
+
+def read_modules (modules) :
     module_name = input ("\t Enter the first module name (blank to quit): ").strip() # .strip() is used to remove any unneccesary spaces 
+
 #because we have used .strip(), even is someone puts spaces in the module name this loop will still work
     while module_name != "":
         module = {}
@@ -16,6 +19,7 @@ def read_modules () :
         #read in next module name
         module_name = input("\t Enter next module name (blank to quit): ").strip()
 
-    return modules
 
-print (module)
+read_modules (modules)
+
+print (modules)
