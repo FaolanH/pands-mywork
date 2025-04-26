@@ -119,7 +119,7 @@ user_input_account = input("Please input your 10 digit account number: ")
 
 redacted_account = '' .join(["X" * (len(user_input_account) - 4) + user_input_account[-4:]])
 
-print (f"For security purpose, your account number has been redacted to only show the last four digit: {redacted_account}")
+print (f"For security purposes, your account number has been redacted to only show the last four digit: {redacted_account}")
 
 '''
 
